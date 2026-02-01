@@ -12,11 +12,11 @@
 
 - A "remote" is a link from my local repo to GitHub.
 - I can see my remotes using `git remote -v`.
-- "Repository not found" usually means the remote URL is wrong or the repo doesn’t exist.
-- My push failed because my GitHub username in the URL was misspelled.
-- I fixed it using:
-  - `git remote set-url origin <correct-url>`
-- `git push -u origin main` uploaded my code and set `main` to track GitHub.
+- "Repository not found" usually means the remote URL is wrong, the repo doesn’t exist, or I don’t have access.
+- My push failed because my GitHub username in the URL was misspelled (`emmacla5` vs `emmacl5`).
+- I fixed it using `git remote set-url origin <correct-url>`.
+- If a push is rejected, it usually means the remote contains commits I don’t have locally.
+- When branches diverge, I can integrate changes using `git pull` (merge) or `git pull --rebase`.
 
 ### CloudFormation learning
 
